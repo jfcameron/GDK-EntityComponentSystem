@@ -3,7 +3,7 @@
 #include <gdk/component.h>
 #include <gdk/entity.h>
 
-#include <nlohmann/json.hpp>
+//#include <nlohmann/json.hpp>
 
 #include <iostream>
 
@@ -13,7 +13,8 @@ namespace gdk
 {
      std::ostream &Component::operator <<(std::ostream &s)
      {
-        return s << nlohmann::json
+        return s << "blar";
+        /*return s << nlohmann::json
         {
             {"Type", TAG}, 
             {"Debug Info", //This part is expensive. Should only be written if some symbol is defined etc. "Debug Info" should also be standardized.
@@ -22,7 +23,7 @@ namespace gdk
             
             {TAG, "UNIMPLEMENTED"},
         }
-        .dump();
+        .dump();*/
      }
 
     std::weak_ptr<Entity> Component::getEntity() const
