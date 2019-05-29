@@ -1,7 +1,7 @@
 # © 2018 Joseph Cameron - All Rights Reserved
 
 set(dependencies
-    "glm"
+#    "glm"
     #"nlohmann"
     #"stb"
 
@@ -25,3 +25,4 @@ endif()]]
 jfc_add_dependencies(${dependencies})
 
 add_subdirectory("${CMAKE_CURRENT_SOURCE_DIR}/GDK-Math")
+
